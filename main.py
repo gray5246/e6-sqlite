@@ -10,4 +10,3 @@ if __name__ == "__main__":
             done = True
         if command1.lower() == "list cafes":
             cafe_data.get_stores()
-            user_interface.display_data("one")

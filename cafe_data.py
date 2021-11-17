@@ -48,3 +48,8 @@ def load_cafe_data():
 def get_stores():
     with sqlite3.connect('data/cafe.sqlite3') as s3:
         result = s3.execute("select name,kind,volume from stores")
+        print(list(result))
+        for store in result:
+            print(f"we have {store[0]} which is a {store[1]} that does ${store[2]:0.2f} per day")
+
+
