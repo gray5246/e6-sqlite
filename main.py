@@ -14,3 +14,5 @@ if __name__ == "__main__":
             cafe_data.destroyer(input("Table to demolish:"))
         if command1.lower() == "load tables":
             cafe_data.load_cafe_data()
+        if command1.lower() == "list specials":
+            cafe_data.list_specials(input("Number:"))

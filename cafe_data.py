@@ -53,6 +53,7 @@ def get_stores():
 def destroyer(tablevar):
     with sqlite3.connect('data/cafe.sqlite3') as s3:
         s3.execute(f"DROP TABLE {tablevar}")
-
-
+def list_specials(num):
+    try:
+    except ClassError a
 
